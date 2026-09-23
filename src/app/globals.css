@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #242826;
+  --color-muted: #5b625f;
+  --color-cream: #faf8f3;
+  --color-line: #e6e3da;
+  --color-forest: #064b45;
+  --color-pine: #0a6b60;
+  --color-mint: #5bf0b0;
+  --color-mint-hover: #3fe39d;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+}
+
+body {
+  @apply bg-white font-sans text-ink antialiased;
+}
