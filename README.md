@@ -13,8 +13,8 @@ The homepage at `/` is your design reference. Build a new landing page for Merid
 The landing page must:
 
 - Match the look of the homepage.
-- Get all of its copy from Sanity. Create your own schema for it, then add and publish the content in the Studio.
-- Include a form that sends its submissions to the webhook URL, with clear success and error states for the user.
+- Get all of its copy from Sanity. Create your own schema, then add and publish the content in the Studio.
+- Connect the form in the home and reuse it in your landing page; it should send submissions to the webhook URL.
 - Work well on mobile and desktop.
 
 Work on a branch, not directly on `main`. Commit as you go, the way you would on a real team.
@@ -24,7 +24,17 @@ Work on a branch, not directly on `main`. Commit as you go, the way you would on
 - Design and attention to detail
 - Sanity schema design
 - Git branching and commit history
-- A working form connection
+- A working form connection using webhooks from Zoho
+
+### AI Use
+
+You can use AI tools for this task, the same way you would at work. We're assessing your judgement, not your typing speed, so we want to see the decisions you made along the way:
+
+- **Own the result.** Be ready to explain any line of code, and why it's there, in a follow-up conversation.
+- **Make the calls yourself.** The schema structure, component design, form behaviour and commit history should reflect your choices. Don't just accept the first suggestion.
+- **Show your reasoning.** Write commit messages that explain *why*, not just *what*.
+
+Code that is clearly generated in one go, with no visible decisions or iteration behind it, will score lower than a smaller piece of work that shows your own thinking.
 
 ---
 
@@ -34,11 +44,11 @@ Work on a branch, not directly on `main`. Commit as you go, the way you would on
 
 - Node.js 20.12 or later
 - npm
-- Access to your Sanity project. Accept the email invite before you start.
+- Access to your Sanity project. We'll send an invite to a Sanity project, please accept it before you start.
 
 ### 1. Create your copy
 
-Click **Use this template** on the repository page to create your own copy under your GitHub account. Make it private, add the reviewer as a collaborator, then clone it.
+Click **Use this template** on the repository page to create your own copy under your GitHub account. Make it private, add the reviewer as a collaborator (@rfl-daniel), then clone it.
 
 ### 2. Install
 
@@ -48,9 +58,7 @@ npm install
 
 ### 3. Environment variables
 
-```bash
-cp .env.example .env.local
-```
+Create a file ```.env.local``` and add these variables
 
 | Variable | Description |
 | --- | --- |
@@ -67,7 +75,7 @@ npm run dev
 - Site: [http://localhost:3000](http://localhost:3000)
 - Sanity Studio: [http://localhost:3000/studio](http://localhost:3000/studio). Log in with the account your invite was sent to.
 
-Run the site on port 3000. The Studio login only works from `http://localhost:3000`.
+Run the site on port 3000. **The Studio login only works from `http://localhost:3000`**.
 
 ---
 
@@ -86,16 +94,4 @@ Run the site on port 3000. The Studio login only works from `http://localhost:30
 
 ## When you're done
 
-Fill in the sections below, push your branch, and reply to the email with the link to your repository.
-
-## How to run
-
-_Anything we need to know beyond the setup above._
-
-## Decisions
-
-_The key choices you made and why._
-
-## What I'd do next
-
-_What you'd improve with more time._
+Email us with the repository you've created. Make sure that the reviewer has access to the repo (@rfl-daniel). 
